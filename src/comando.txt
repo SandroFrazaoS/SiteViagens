@@ -1,0 +1,31 @@
+Pagina de reservas de viagens utilizando React com Redux.
+
+O objetivo desde projeto foi aprender um pouco sobre Redux e Redux Saga. 
+Para simular uma API Fake com informações sobre pontos de viagens e passagens disponivel por ponto, criei um arquivo JSON chamado server.json  
+e utilizeio o JSON-Server para gerar meu servidor fake.
+
+JSON-Server é um pacote npm que você pode usar para criar um webservice REST JSON simulando uma API.
+
+O Redux é uma biblioteca feita para gerenciar estados em uma aplicação, ela tira a responsabilidade de um componente ter um estado 
+que poderá ser usado por vários outros componentes dentro da sua aplicação e passa isso para um objeto global, 
+que pode ser acessado por qualquer componente, a qualquer momento.
+
+Ja o redux-saga utilizo como middle entre pagina home e reservas.
+Ele é uma biblioteca que foca em fazer os efeitos colaterais em aplicações React/Redux serem mais fáceis e simples de se criar e manter.
+Por exemplo chamadas assíncronas para buscar dados em uma API, transformações impuras como acessar o cache do navegador, etc.
+
+tambem utilizei no projetos blibliotecas como
+axios, react-router-dom, history, immer, react-icons entre outroas.
+
+
+
+
+yarn add global json-server
+npm install -g json-server
+
+json-server server.json -p 3333
+
+json-server server.json -p 3333 - 2000
+
+
+
