@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <br>
+  <br>
+  Pagina de reservas de viagens utilizando React com Redux.
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+   Desenvolvido com React + NodeJS + Redux  
+</h4>
 
-## Available Scripts
+<h6 align="center">
+  bootcamp SujeitoProgramador
+</h6>
 
-In the project directory, you can run:
+<br/>
 
-### `yarn start`
+<p align="center">
+  <a href="#Pre-Requisitos">Pre-requisitos</a> |
+  <a href="#Instalação">Instalação</a> |
+  <a href="#Usabilidade">Usabildiade</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Pre-Requisitos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [React](https://pt-br.reactjs.org/)
+* [Node.JS](https://nodejs.org/)
+* [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/get-npm)
 
-### `yarn test`
+# Instalação
+```
+# Primeiro clone o repositorio do Git para seu computador. Execute o comando; 
+git clone https://github.com/SandroFrazaoS/SiteViagens.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Acesse a pasta criado atraves do comando; 
+cd SiteViagens
 
-### `yarn build`
+# Instale todas as dependencias do projeto, acesse a pasta SiteViagens e execute o comando;
+yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Para start do site execute dentro da pasta SiteViagens o comando;
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Usabilidade
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O objetivo desde projeto foi aprender um pouco sobre Redux e Redux Saga. 
+Para simular uma API Fake com informações sobre pontos de viagens e passagens disponível por ponto, criei um arquivo JSON chamado server.json  
+e utilizei o JSON-Server para gerar meu servidor fake.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+JSON-Server é um pacote npm que você pode usar para criar um webservice REST JSON simulando uma API.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O Redux é uma biblioteca feita para gerenciar estados em uma aplicação, ela tira a responsabilidade de um componente ter um estado 
+que poderá ser usado por vários outros componentes dentro da sua aplicação e passa isso para um objeto global, 
+que pode ser acessado por qualquer componente, a qualquer momento.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Já o redux-saga utilizo como middle entre pagina home e reservas.
+Ele é uma biblioteca que foca em fazer os efeitos colaterais em aplicações React/Redux serem mais fáceis e simples de se criar e manter.
+Por exemplo chamadas assíncronas para buscar dados em uma API, transformações impuras como acessar o cache do navegador, etc.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+No projeto utilizei bibliotecas como
+axios, react-router-dom, history, immer, react-icons entre outros.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Tela de principal.
 
-### Analyzing the Bundle Size
+![1][tela1]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Tela de reservas
 
-### Making a Progressive Web App
+![2][tela2]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+[tela1]: Tela1.png
+[tela2]: Tela2.png
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
